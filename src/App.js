@@ -54,9 +54,7 @@ class App extends React.Component {
     if (this.state.blogs && this.state.comments)
       return (
         <div className="ui container" style={{ marginTop: '20px' }}>
-          <Blogs blogs={this.state.blogs} />
-          <hr />
-          <Comments comments={this.state.comments} />
+          <Blogs blogs={this.state.blogs} comments={this.state.comments} />
         </div>
       );
     else
